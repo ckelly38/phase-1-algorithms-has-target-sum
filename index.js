@@ -1,5 +1,15 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
+  for(let n = 0; n < array.length; n++)
+  {
+    for(let k = n + 1; k < array.length; k++)
+    {
+      if (target - array[n] == array[k]) return true;
+      //else;//do nothing
+    }
+  }
+  //if (target == 0 && array.length == 0) return true;
+  return false;
 }
 
 /* 
@@ -8,6 +18,11 @@ function hasTargetSum(array, target) {
 
 /* 
   Add your pseudocode here
+  get diff = target - item[n]
+  then for all other items:
+  check to see if one of them equals the diff
+  if they do return true
+  if none are found that do return false
 */
 
 /*
