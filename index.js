@@ -13,7 +13,7 @@ function hasTargetSum(array, target) {
 }
 
 /* 
-  Write the Big O time complexity of your function here
+  Write the Big O time complexity of your function here O(n*n=n^2)
 */
 
 /* 
